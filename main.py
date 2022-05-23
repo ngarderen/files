@@ -20,7 +20,7 @@ def cache_zip(zip_file_path, cache_dir_path):
 
 
 def cached_files():
-    absolute_path = r"C:\Users\ngard\Desktop\Winc\files\cache"
+    absolute_path = os.path.join(os.getcwd(), "cache")
     list_full_path = []
     for path in os.listdir(absolute_path):
         full_path = os.path.join(absolute_path, path)
